@@ -8,33 +8,38 @@
     <title>CalculadoraIMC</title>
 </head>
 <body>
-    <main>
-    <form>  
-        <div>
-            <label for="massaUsuario">Digite seu peso em kg...:</label>
-            <input type="number" id="massaUsuario" name="massaUsuario" placeholder="70">
-        </div>
-
-        <div>
-            <label for="alturaUsuario">Digite sua altura em m..:</label>
-            <input type="number" id="alturaUsuario" name="alturaUsuario" placeholder="1.60">
-        </div>
-
+   
+<main>
+    
+    <div class="tronco">
+        <form>  
+            <div>
+                <label for="massaUsuario">Digite seu peso em kg...:</label>
+                <input type="number" id="massaUsuario" name="massaUsuario" placeholder="70">
+            </div>
+            
+            <div>
+                <label for="alturaUsuario">Digite sua altura em m..:</label>
+                <input type="number" id="alturaUsuario" name="alturaUsuario" placeholder="1.60">
+            </div>
+            
             <button id="botaoCalcular" type="button">Calcular</button>
-    </form>
-
-    <div id="exibeCalculos" hidden="true">
-        <div>
-            <h3>Seu IMC é:</h3>
-            <p id="exibeIMC"></p>
-        </div>
-        
-         <div>
-            <h3>Diagnóstico:</h3>
-            <p id="exibeSituacao"></p>
-        </div>
+        </form>
     </div>
-    <script src="index.js"></script>
-</main>
+        
+        <div id="exibeCalculos" hidden="true">
+            <div>
+                <h3>Seu IMC é:</h3>
+                <p id="exibeIMC"></p>
+            </div>
+            
+            <div>
+                <h3>Diagnóstico:</h3>
+                <p id="exibeSituacao"></p>
+            </div>
+        </div>
+       
+</main> 
+<script src="index.js"></script>
 </body>
 </html>
